@@ -8,10 +8,10 @@ I developed an **AI-powered Mental Health Support Chatbot** designed to engage i
 
 ## How I Measured Success (Y)
 
-- Improved **empathy score** and **response relevance** across multiple test cases
-- Achieved significant alignment with **emotional tone** and **contextual flow**
-- Positive evaluation through **manual testing** and **sample interaction audits**
-- Demonstrated potential for **peer-level emotional support**, not clinical diagnosis
+- Improved **empathy score** and **response relevance** across multiple test cases  
+- Achieved significant alignment with **emotional tone** and **contextual flow**  
+- Positive evaluation through **manual testing** and **sample interaction audits**  
+- Demonstrated potential for **peer-level emotional support**, not clinical diagnosis  
 
 ---
 
@@ -19,58 +19,64 @@ I developed an **AI-powered Mental Health Support Chatbot** designed to engage i
 
 ### Dataset Used
 
-- **EmpatheticDialogues (Facebook AI Research)**
-  - Contains ~25k human-to-human conversations grounded in emotional situations
-  - Annotated with emotion labels and designed to encourage empathy
-  - Ideal for tasks focused on **emotion recognition** and **empathetic response generation**
+- **EmpatheticDialogues** – Facebook AI Research  
+  - Approximately 25,000 human-to-human conversations grounded in emotional scenarios  
+  - Annotated with emotion labels and designed to encourage empathetic, context-aware responses  
+  - Suitable for emotion recognition, dialogue generation, and compassion-oriented training tasks  
 
 ---
 
 ### Model Applied
 
-- **Base Model**: `EleutherAI/gpt-neo-2.7B`
-- **Fine-tuning Approach**: Parameter-efficient fine-tuning using **LoRA (Low-Rank Adaptation)**
-- **Frameworks**: 
-  - Hugging Face Transformers
-  - PEFT (Parameter-Efficient Fine-Tuning) Library
+- **Base Model**: [`EleutherAI/gpt-neo-2.7B`](https://huggingface.co/EleutherAI/gpt-neo-2.7B)  
+- **Fine-tuned Model**: [`Maarij-Aqeel/Mental_Health_chatbot`](https://huggingface.co/Maarij-Aqeel/Mental_Health_chatbot)  
+- **Fine-tuning Technique**: LoRA (Low-Rank Adaptation) for efficient training  
+- **Frameworks Used**:
+  - Hugging Face Transformers and Datasets  
+  - PEFT (Parameter-Efficient Fine-Tuning)  
+  - PyTorch + Accelerate for performance optimization  
 
 ---
 
 ### Key Results and Findings
 
-- The fine-tuned model:
-  - Exhibited **significantly improved emotional alignment**
-  - Maintained **response coherence** over multiple turns
-  - Adapted tone dynamically based on user input (e.g., sadness vs frustration)
-- Observed reduction in **generic responses** compared to base GPT-Neo
-- Safe and supportive language maintained across interactions with custom safeguards
+- **Improved emotional alignment** across varied emotional states (e.g., sadness, loneliness, frustration)  
+- **Reduced generic responses** compared to the base GPT-Neo model  
+- **Contextually rich and coherent multi-turn conversations** maintained over several exchanges  
+- Custom safeguards added to promote **safe and responsible conversation handling**
 
 ---
 
 ## Use Cases
 
-- Emotional support for students, remote workers, and isolated individuals
-- Integration into **mental wellness apps** or **anonymous chat platforms**
-- Can act as a **first line of empathetic conversation** before human referral
+- AI support assistant in **mental wellness platforms**  
+- **Anonymous chat services** offering emotionally intelligent companionship  
+- Tool for **training conversational AI models** in empathy-oriented dialogue tasks  
 
 ---
 
 ## Technical Stack
 
-- **Model**: GPT-Neo 2.7B (EleutherAI)
-- **Training**: PyTorch + Hugging Face Trainer API
-- **Fine-tuning method**: LoRA
+- **Model Architecture**: GPT-Neo 2.7B  
+- **Training**: PyTorch + Hugging Face Trainer API  
+- **Fine-tuning**: LoRA-based efficient adaptation  
+- **Evaluation**: Manual review, test prompt scenarios, and quality scoring  
 - **Dataset**: EmpatheticDialogues (Facebook AI)
-- **Evaluation**: Custom scripts + manual review
 
 ---
 
 ## Future Work
 
-- Add **emotion classification module** to better steer responses
-- Expand dataset with **multilingual dialogues**
-- Integrate **voice-based interaction** for more natural user experience
-- Deployment via **FastAPI or Streamlit** for demo interface
+- Integrate an **emotion detection classifier** to guide responses in real time  
+- Extend training with **multilingual emotion-rich dialogues**  
+- Add **voice-based interface** using Vapi or similar tools  
+- Deploy using **FastAPI** for backend inference and **Streamlit or Next.js** for the UI demo  
 
 ---
 
+## Model Access
+
+You can explore and use the model here:  
+**[Maarij-Aqeel/Mental_Health_chatbot on Hugging Face](https://huggingface.co/Maarij-Aqeel/Mental_Health_chatbot)**
+
+---
